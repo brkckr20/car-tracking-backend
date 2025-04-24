@@ -41,7 +41,7 @@ exports.upcomingProcessList = [
             id: 1,
             plate: "20 AGC 293",
         },
-        date: new Date(),
+        date: '2025-04-05T14:20:48.459Z',
         description: "Description alanıdır",
         isDone: false,
         price: 5200,
@@ -67,5 +67,24 @@ exports.upcomingProcessList = [
         processKm: 304000,
         nextKm: 314000,
         currentKm: 304200,
-    }
+    },
+    {
+        id: 3,
+        process: {
+            id: 3,
+            processName: "Sigorta",
+            processGroup: "Zorunlu Gider",
+        },
+        car: {
+            id: 1,
+            plate: "20 AGC 293",
+        },
+        date: new Date(),
+        description: "Description alanıdır",
+        isDone: false,
+        price: 5200,
+        processKm: 304000,
+        nextKm: 314000,
+        currentKm: 304200,
+    },
 ];

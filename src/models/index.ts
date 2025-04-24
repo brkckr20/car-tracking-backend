@@ -20,7 +20,7 @@ export interface UpcomingProcess {
     id: number;
     process?: Process,
     car?: Car,
-    date?: Date,
+    date?: Date | any,
     description?: string,
     isDone?: boolean,
     price?: number,
