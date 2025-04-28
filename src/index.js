@@ -10,7 +10,7 @@ const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 const port = process.env.PORT || 3001;
 app.get('/', (req, res) => {
-    res.send({ upcomingProcessList: data_1.upcomingProcessList });
+    res.send({ upcomingProcessList: data_1.upcomingProcessList, processList: data_1.processList });
 });
 app.get('/cards', (req, res) => {
     res.send({ carList: data_1.carList, processList: data_1.processList });
