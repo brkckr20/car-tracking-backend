@@ -5,6 +5,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
+const mysql_1 = __importDefault(require("mysql"));
+const db = mysql_1.default.createConnection({
+    host: 'mysql-aractakip.alwaysdata.net',
+    user: 'aractakip',
+    password: 'Q1q2w3e4r5t.',
+    database: 'aractakip_2025'
+});
+db.connect();
+db.query('select * from Operations', (err, rows, fields) => {
+    if (err)
+        throw err;
+    console.log('The solution is: ', rows);
+});
+db.end();
 const data_1 = require("./data");
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
