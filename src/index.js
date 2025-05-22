@@ -7,10 +7,10 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const mysql_1 = __importDefault(require("mysql"));
 const db = mysql_1.default.createConnection({
-    host: 'mysql-aractakip.alwaysdata.net',
-    user: 'aractakip',
-    password: 'Q1q2w3e4r5t.',
-    database: 'aractakip_2025'
+    host: '#',
+    user: '#',
+    password: '#',
+    database: '#'
 });
 db.connect();
 db.query('select * from Operations', (err, rows, fields) => {
